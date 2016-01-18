@@ -15,7 +15,7 @@ module Jekyll
       end
 
       all_entries = []
-      site.posts.each do |p|
+      site.posts.docs.each do |p|
         if p.data['series'] == series_name
           all_entries << p
         end
